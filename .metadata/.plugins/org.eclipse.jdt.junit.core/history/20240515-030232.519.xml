@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RunCucumberTest" project="CMMSelenium" tests="2" started="2" failures="0" errors="1" ignored="0">
+  <testsuite name="config.RunCucumberTest" time="30.081">
+    <testsuite name="Scheduling a meet" time="30.081">
+      <testcase name="Scheduling a new meet" classname="Scheduling a meet" time="16.381"/>
+      <testcase name="Scheduling a meet and cancel it" classname="Scheduling a meet" time="13.7">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'the Meeting deleted successfully message should be the output on the page' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then("the Meeting deleted successfully message should be the output on the page")
+public void the_meeting_deleted_successfully_message_should_be_the_output_on_the_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

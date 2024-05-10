@@ -1,0 +1,6 @@
+Feature: Registering a client
+  Scenario: Adding a new Product
+    Given the user is on the add product page
+    When the user enters the product details and click on the add button
+    Then the product added successfully message should be the output on the page
+

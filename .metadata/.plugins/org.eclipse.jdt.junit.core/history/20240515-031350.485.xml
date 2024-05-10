@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RunCucumberTest" project="CMMSelenium" tests="2" started="2" failures="0" errors="1" ignored="0">
+  <testsuite name="config.RunCucumberTest" time="31.95">
+    <testsuite name="Registering a client" time="15.883">
+      <testcase name="Adding a new client" classname="Registering a client" time="15.883"/>
+    </testsuite>
+    <testsuite name="Scheduling a meet" time="16.06">
+      <testcase name="Scheduling a meet and cancel it" classname="Scheduling a meet" time="16.06">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'the user should delete the meeting with topic "Selenium KT"' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then("the user should delete the meeting with topic {string}")
+public void the_user_should_delete_the_meeting_with_topic(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

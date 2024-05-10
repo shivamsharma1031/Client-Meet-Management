@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RunCucumberTest" project="CMMSelenium" tests="2" started="2" failures="0" errors="1" ignored="0">
+  <testsuite name="config.RunCucumberTest" time="31.499">
+    <testsuite name="Scheduling a meet" time="31.499">
+      <testcase name="Scheduling a new meet" classname="Scheduling a meet" time="15.695"/>
+      <testcase name="Scheduling a meet and cancel it" classname="Scheduling a meet" time="15.804">
+        <error>org.openqa.selenium.JavascriptException: javascript error: {"status":32,"value":"An invalid or illegal selector was specified"}
+  (Session info: chrome=124.0.6367.202)
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.5.2', java.version: '11.0.19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d35649688511cceba2aceaf513f0ea89, findElements {value=table[name='meetTable'] tbody tr, using=name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.202, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: /var/folders/_6/5hk6nhk12kz...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51008}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51008/devtoo..., se:cdpVersion: 124.0.6367.202, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d35649688511cceba2aceaf513f0ea89
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)
+	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:362)
+	at pages.AddMeetPage.locateMeet(AddMeetPage.java:45)
+	at stepdefinitions.AddMeetSteps.I_locate_the_meeting_with_topic(AddMeetSteps.java:30)
+	at ✽.the user should locate the meeting with topic "Selenium KT"(file:///Users/shivamsh/Documents/Client-Meet-Management/CMMSelenium/src/test/java/resource/features/schedule_meet.feature:11)
+
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

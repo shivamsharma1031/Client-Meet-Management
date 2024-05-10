@@ -1,0 +1,33 @@
+package stepdefinitions;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import pages.AddClientPage;
+import pages.AddMeetPage;
+
+public class AddMeetSteps {
+	private AddMeetPage addMeet = new AddMeetPage();
+
+	@Given("the user is on the schedule meet page")
+	public void navigateToClientpage() {
+		addMeet.navigateTo();
+	}
+
+	@When("the user enters the client details and click on the register button")
+	public void enterClientDetails() {
+		addMeet.enterClientDetails();
+	}
+
+	@Then("the meet is scheduled successfully message should be the output on the page")
+	public void addedSuccessfully() {
+		// successfullmsg test
+		addMeet.isClientAdded();
+//		String message = addClient.isClientAdded();
+//		if(message == "Client added successfully") {
+			
+//		}
+		addMeet.closeBrowser();
+	}
+
+}

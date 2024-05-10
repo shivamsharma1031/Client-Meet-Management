@@ -1,0 +1,20 @@
+<div class="content-wrapper">
+  <h1 class="page-title">Client Records</h1>
+  <div>{{ message }}</div>
+  <table class="styled-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let client of clients">
+        <td>{{ client.mail }}</td>
+        <td>{{ client.address }}</td>
+        <td><button class="delete-btn" name="delete-btn" (click)="deleteClient(client.id)">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RunCucumberTest" project="CMMSelenium" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="config.RunCucumberTest" time="51.627">
+    <testsuite name="Registering a client" time="17.971">
+      <testcase name="Adding a new client" classname="Registering a client" time="17.971"/>
+    </testsuite>
+    <testsuite name="Scheduling a meet" time="33.649">
+      <testcase name="Scheduling a new meet" classname="Scheduling a meet" time="16.102"/>
+      <testcase name="Scheduling a meet and cancel it" classname="Scheduling a meet" time="17.547"/>
+    </testsuite>
+  </testsuite>
+</testrun>

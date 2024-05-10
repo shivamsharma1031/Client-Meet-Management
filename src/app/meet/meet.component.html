@@ -1,0 +1,33 @@
+<div class="form-container">
+    <h1 style="color: orangered;">Create a Meeting Schedule</h1>
+  
+    <form #meetForm="ngForm" (ngSubmit)="scheduleClientMeet()" class="form-style">
+      <div class="form-group">
+        <label>Meeting Topic</label>
+        <input type="text" name="meetTopic" [(ngModel)]="meetTopic" required>
+        <div *ngIf="meetTopic.trim().length === 0 && submitted" class="error-message">
+          Meeting topic is required.
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label>Number of People</label>
+        <input type="number" name="numOfPeople" [(ngModel)]="numOfPeople" min="1" required>
+        <div *ngIf="numOfPeople < 1 && submitted" class="error-message">
+          Must have at least one participant.
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label>Start Time</label>
+        <input type="datetime-local" name="meetStartTime" [(ngModel)]="meetStartTime" required>
+        <div *ngIf="meetStartTime.trim().length === 0 && submitted" class="error-message">
+          Start time is required.
+        </div>
+      </div>
+  
+      <!-- <div class="message" name="meetMsg">{{message}}</div> -->
+      <button type="submit" class="submit-btn" name="schedule">Schedule</button>
+    </form>
+</div>
+  

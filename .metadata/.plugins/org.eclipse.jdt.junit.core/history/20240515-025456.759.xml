@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RunCucumberTest" project="CMMSelenium" tests="2" started="2" failures="0" errors="1" ignored="0">
+  <testsuite name="config.RunCucumberTest" time="29.727">
+    <testsuite name="Scheduling a meet" time="29.727">
+      <testcase name="Scheduling a new meet" classname="Scheduling a meet" time="15.447"/>
+      <testcase name="Scheduling a meet and cancel it" classname="Scheduling a meet" time="14.28">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'the user should locate the meeting with topic "Selenium KT"' and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Then("the user should locate the meeting with topic {string}")
+public void the_user_should_locate_the_meeting_with_topic(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the Meeting deleted successfully message should be the output on the page")
+public void the_meeting_deleted_successfully_message_should_be_the_output_on_the_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

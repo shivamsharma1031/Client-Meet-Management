@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RunCucumberTest" project="CMMSelenium" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="config.RunCucumberTest" time="79.057">
+    <testsuite name="Scheduling a meet" time="79.057">
+      <testcase name="Scheduling a meet and cancel it" classname="Scheduling a meet" time="79.057"/>
+    </testsuite>
+  </testsuite>
+</testrun>

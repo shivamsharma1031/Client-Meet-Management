@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RunCucumberTest" project="CMMSelenium" tests="2" started="2" failures="0" errors="1" ignored="0">
+  <testsuite name="config.RunCucumberTest" time="30.993">
+    <testsuite name="Scheduling a meet" time="30.993">
+      <testcase name="Scheduling a new meet" classname="Scheduling a meet" time="16.315"/>
+      <testcase name="Scheduling a meet and cancel it" classname="Scheduling a meet" time="14.678">
+        <error>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.5.2', java.version: '11.0.19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElements {using=css selector, value=table[name='meetTable'] tbody tr}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.202, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: /var/folders/_6/5hk6nhk12kz...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49686/devtoo..., se:cdpVersion: 124.0.6367.202, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:151)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)
+	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:362)
+	at pages.AddMeetPage.locateMeet(AddMeetPage.java:45)
+	at stepdefinitions.AddMeetSteps.I_locate_the_meeting_with_topic(AddMeetSteps.java:31)
+	at ✽.the user should locate the meeting with topic "Selenium KT"(file:///Users/shivamsh/Documents/Client-Meet-Management/CMMSelenium/src/test/java/resource/features/schedule_meet.feature:11)
+
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

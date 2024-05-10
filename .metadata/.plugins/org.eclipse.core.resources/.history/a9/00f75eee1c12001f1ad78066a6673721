@@ -1,0 +1,28 @@
+package stepdefinitions;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import pages.AddClientPage;
+
+public class AddClientSteps {
+	private AddClientPage addproduct = new AddClientPage();
+
+	@Given("the user is on the add product page")
+	public void navigateToproductpage() {
+		addproduct.navigateTo();
+	}
+
+	@When("the user enters the product details and click on the add button")
+	public void enterProductDetails() {
+		addproduct.enterProductdetails();
+	}
+
+	@Then("the product added successfully message should be the output on the page")
+	public void addedSuccessfully() {
+		// successfullmsg test
+		addproduct.isproductAdded();
+		addproduct.closeBrowser();
+	}
+
+}

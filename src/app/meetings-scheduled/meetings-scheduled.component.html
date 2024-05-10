@@ -1,0 +1,39 @@
+<!-- {{message}}
+<h1>Meet Records</h1>
+<table border="1">
+<tr>
+<th>Name</th>
+<th>Number of People</th>
+<th>Order time</th>
+<th>Delete</th>
+</tr>
+<tr *ngFor="let meet of meetings">
+    <td>{{meet.meetTopic}}</td>
+    <td>{{meet.numOfPeople}}</td>
+    <td>{{meet.meetStartTime}}</td>
+    <td><button (click)="deleteMeet(meet.id)">Delete</button></td>
+</tr>
+</table> -->
+
+<div class="content-wrapper">
+    {{message}}
+    <h1 class="page-title">Meet Records</h1>
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Number of People</th>
+                <th>Order time</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let meet of meetings">
+                <td>{{meet.meetTopic}}</td>
+                <td>{{meet.numOfPeople}}</td>
+                <td>{{ meet.meetStartTime | date: 'medium' }}</td>
+                <td><button class="delete-btn" name="delete-btn" (click)="deleteMeet(meet.id)">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

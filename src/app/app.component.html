@@ -1,0 +1,39 @@
+<!-- <h1>Hi, Shivam Sharma</h1>
+<ul>
+  <li routerLinkActive="active">
+    <a routerLink="/registerClient">Client Registration</a>
+  </li>
+  <li routerLinkActive="active">
+    <a routerLink="/scheduleMeet">Schedule a Meet</a>
+  </li>
+  <li routerLinkActive="active">
+    <a routerLink="/allClients">Registered Client</a>
+  </li>
+  <li routerLinkActive="active">
+    <a routerLink="/allScheduledMeetings">Meetings Scheduled</a>
+  </li>
+</ul>
+<router-outlet></router-outlet> -->
+
+<!-- Top Navigation Bar -->
+
+<nav class="top-nav">
+  <div class="app-title">
+    <a routerLink="/" style="color: orange; text-decoration: none;">Client Meet Management</a>
+  </div>
+  <div class="nav-links">
+    <button routerLink="/registerClient"  name="registerClient" routerLinkActive="active">Client Registration</button>
+    <button routerLink="/scheduleMeet" name="scheduleMeet" routerLinkActive="active">Schedule a Meet</button>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<div class="main-content">
+  <h1 class="welcome">Hi, Shivam Sharma</h1>
+  <div class="options">
+    <a routerLink="/allClients" routerLinkActive="active" name="allClients" class="option-link">Registered Client</a>
+    <a routerLink="/allScheduledMeetings" routerLinkActive="active" name="allScheduledMeetings"  class="option-link">Meetings Scheduled</a>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

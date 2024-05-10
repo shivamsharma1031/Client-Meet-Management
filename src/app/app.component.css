@@ -1,0 +1,71 @@
+/* Top Navigation Bar Styling */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color:black;
+    color: white;
+    align-items: center;
+}
+  
+.app-title {
+    font-size: 20px;
+}
+  
+.nav-links button {
+    background-color: orangered;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+  
+.nav-links button:hover {
+    background-color: #45a049;
+}
+
+/* Main Content Styling */
+.main-content {
+  text-align: center;
+}
+
+.welcome {
+  font-weight: bold;
+  font-size: 60px; 
+  color: orangered;
+}
+  
+  .options {
+    margin-top: 20px;
+  }
+  
+  .option-link {
+    display: inline-block;
+    background-color: orange;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .option-link:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .top-nav {
+      flex-direction: column;
+    }
+  
+    .nav-links {
+      margin-top: 10px;
+    }
+  }
+  
