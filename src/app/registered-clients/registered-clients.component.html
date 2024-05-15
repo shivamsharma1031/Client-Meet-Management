@@ -6,11 +6,13 @@
       <tr>
         <th>Name</th>
         <th>Email</th>
+        <th>Address</th>
         <th>Delete</th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let client of clients">
+        <td>{{ client.cname }}</td>
         <td>{{ client.mail }}</td>
         <td>{{ client.address }}</td>
         <td><button class="delete-btn" name="delete-btn" (click)="deleteClient(client.id)">Delete</button></td>
